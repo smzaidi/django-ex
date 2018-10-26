@@ -10,6 +10,7 @@ WORKDIR /app
 
 COPY . .
 
+RUN pip install pyvim pyVmomi
 RUN pip install -r requirements.txt
 
 #RUN chown -R www-data /app
