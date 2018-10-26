@@ -1,7 +1,7 @@
 FROM python:2.7
 MAINTAINER Chris Kretler "ckretler@umich.edu"
 
-#RUN yum update -y
+RUN yum -y update
 
 WORKDIR /app
 
