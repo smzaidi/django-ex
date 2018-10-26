@@ -10,7 +10,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install pyvim pyVmomi
+RUN . /opt/app-root/etc/scl_enable && pip install pyvim pyVmomi
 RUN pip install -r requirements.txt
 
 #RUN chown -R www-data /app
